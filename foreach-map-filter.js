@@ -77,8 +77,13 @@ Examples:
         {name: 'Colt', title:'instructor'}]
 
 */
-function addKeyAndValue(arr,key,value){
+function addKeyAndValue(arr, key, value){
     
+    arr.forEach(function(val, index, array) {
+        val[key] = value;
+    })
+
+    return arr;
 }
 
 /*
