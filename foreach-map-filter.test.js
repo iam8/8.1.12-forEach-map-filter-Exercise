@@ -1,3 +1,7 @@
+// Ioana Alex Mititean
+// 10/10/22
+// Unit 8.1.12: forEach, map, filter Exercise
+
 describe("#doubleValues", function() {
   it("doubles values in an array", function() {
     expect(doubleValues([1, 2, 3])).toEqual([2, 4, 6]);

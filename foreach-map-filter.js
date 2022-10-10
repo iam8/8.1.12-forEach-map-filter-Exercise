@@ -1,3 +1,7 @@
+// Ioana Alex Mititean
+// 10/10/22
+// Unit 8.1.12: forEach, map, filter Exercise
+
 /*
 Write a function called doubleValues which accepts an array and returns a new array with all the values in the array passed to the function doubled
 
