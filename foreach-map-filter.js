@@ -12,7 +12,13 @@ Examples:
 
 */
 function doubleValues(arr){
-    
+
+    let newArr = [];
+    arr.forEach(function(value, index, array) {
+        newArr.push(value * 2);
+    })
+
+    return newArr;
 }
 
 /*
