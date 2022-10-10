@@ -31,7 +31,15 @@ Examples:
 
 */
 function onlyEvenValues(arr){
-    
+
+    let newArr = [];
+    arr.forEach(function(value, index, array) {
+        if (value % 2 === 0) {
+            newArr.push(value);
+        }
+    })
+
+    return newArr;
 }
 
 /*
