@@ -52,7 +52,15 @@ Examples:
 
 */
 function showFirstAndLast(arr){
-    
+
+    let newArr = [];
+    arr.forEach(function(value, index, array) {
+        const first = value[0];
+        const last = value[value.length - 1];
+        newArr.push(first + last);
+    })
+
+    return newArr;
 }
 
 /*
