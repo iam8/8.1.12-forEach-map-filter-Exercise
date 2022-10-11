@@ -201,7 +201,12 @@ Examples:
                        {first: 'Colt', last:"Steele", isCatOwner: true}]
 */
 
-function filterByValue(arr, key) {}
+function filterByValue(arr, key) {
+
+    return arr.filter(function(value, index, array) {
+        return value[key] !== undefined;
+    });
+}
 
 /*
 Write a function called find which accepts an array and a value and returns the first element in
@@ -213,7 +218,14 @@ Examples:
     find([1,2,3,4,5], 10) // undefined
 */
 
-function find(arr, searchValue) {}
+function find(arr, searchValue) {
+
+    // return arr.filter(function(value, index, array) {
+    //     return value === searchValue;
+    // })
+
+    
+}
 
 /*
 Write a function called findInObj which accepts an array of objects, a key, and some value to
