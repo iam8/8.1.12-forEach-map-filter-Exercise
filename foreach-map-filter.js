@@ -224,7 +224,13 @@ function find(arr, searchValue) {
     //     return value === searchValue;
     // })
 
+    let valueArr = arr.filter(function(value, index, array) {
+        return value === searchValue;
+    })
 
+    if (valueArr.length > 0) {
+        return searchValue;
+    }
 }
 
 /*
