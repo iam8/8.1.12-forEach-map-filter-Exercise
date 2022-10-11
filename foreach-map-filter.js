@@ -224,7 +224,7 @@ function find(arr, searchValue) {
     //     return value === searchValue;
     // })
 
-    
+
 }
 
 /*
@@ -253,7 +253,15 @@ Examples:
     removeVowels('ZZZZZZ') // ('zzzzzz')
 */
 
-function removeVowels(str) {}
+function removeVowels(str) {
+
+    let strArr = Array.from(str.toLowerCase());
+    let noVowelsArr = strArr.filter(function(value, index, array) {
+        return !("aeiou").includes(value);
+    })
+
+    return noVowelsArr.join("");
+}
 
 /*
 Write a function called doubleOddNumbers which accepts an array and returns a new array with all of
