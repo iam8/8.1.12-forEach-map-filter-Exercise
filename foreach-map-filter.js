@@ -142,7 +142,11 @@ Examples:
 */
 
 function valTimesIndex(arr){
-    
+
+    return arr.map(function(value, index, array) {
+        return value * index;
+    })
+
 }
 
 /*
