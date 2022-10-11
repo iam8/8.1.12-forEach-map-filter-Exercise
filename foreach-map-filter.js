@@ -273,4 +273,13 @@ Examples:
     doubleOddNumbers([4,4,4,4,4]) // []
 */
 
-function doubleOddNumbers(arr) {}
+function doubleOddNumbers(arr) {
+
+    let oddNumsArr = arr.filter(function(value, index, array) {
+        return value % 2 !== 0;
+    })
+
+    return oddNumsArr.map(function(value, index, array) {
+        return value * 2;
+    })
+}
