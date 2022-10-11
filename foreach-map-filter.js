@@ -11,7 +11,7 @@ Examples:
     doubleValues([5,1,2,3,10]) // [10,2,4,6,20]
 
 */
-function doubleValues(arr){
+function doubleValues(arr) {
 
     let newArr = [];
     arr.forEach(function(value, index, array) {
@@ -30,7 +30,7 @@ Examples:
     onlyEvenValues([5,1,2,3,10]) // [2,10]
 
 */
-function onlyEvenValues(arr){
+function onlyEvenValues(arr) {
 
     let newArr = [];
     arr.forEach(function(value, index, array) {
@@ -51,7 +51,7 @@ Examples:
     showFirstAndLast(['hi', 'goodbye', 'smile']) // ['hi', 'ge', 'se']
 
 */
-function showFirstAndLast(arr){
+function showFirstAndLast(arr) {
 
     let newArr = [];
     arr.forEach(function(value, index, array) {
@@ -77,7 +77,7 @@ Examples:
         {name: 'Colt', title:'instructor'}]
 
 */
-function addKeyAndValue(arr, key, value){
+function addKeyAndValue(arr, key, value) {
     
     arr.forEach(function(val, index, array) {
         val[key] = value;
@@ -98,7 +98,7 @@ Examples:
     vowelCount('hmmm') // {};
     vowelCount('I Am awesome and so are you') // {i: 1, a: 4, e: 3, o: 3, u: 1};
 */
-function vowelCount(str){
+function vowelCount(str) {
 
     let vowelObj = {};
     let strArr = Array.from(str.toLowerCase());
@@ -141,12 +141,11 @@ Examples:
     valTimesIndex([1,-2,-3]) // [0,-2,-6]
 */
 
-function valTimesIndex(arr){
+function valTimesIndex(arr) {
 
     return arr.map(function(value, index, array) {
         return value * index;
     })
-
 }
 
 /*
@@ -159,7 +158,7 @@ Examples:
     // ['Elie', 'Tim', 'Matt', 'Colt']
 */
 
-function extractKey(arr, key){
+function extractKey(arr, key) {
 
     return arr.map(function(value, index, array) {
         return value[key];
@@ -180,7 +179,7 @@ Examples:
                      // ['Elie Schoppik', 'Tim Garcia', 'Matt Lane', 'Colt Steele']
 */
 
-function extractFullName(arr){
+function extractFullName(arr) {
 
     return arr.map(function(value, index, array) {
         return `${value["first"]} ${value["last"]}`;
