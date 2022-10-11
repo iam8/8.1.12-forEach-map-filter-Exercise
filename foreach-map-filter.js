@@ -246,7 +246,16 @@ Examples:
                // {first: 'Tim', last:"Garcia", isCatOwner: true}
 */
 
-function findInObj(arr, key, searchValue) {}
+function findInObj(arr, key, searchValue) {
+
+    let foundValsArr = arr.filter(function(value, index, array) {
+        return value[key] === searchValue;
+    })
+
+    if (foundValsArr.length > 0) {
+        return foundValsArr[0];
+    }
+}
 
 /*
 Write a function called removeVowels which accepts a string and returns a new string with all of
