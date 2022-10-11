@@ -125,7 +125,12 @@ Examples:
     doubleValuesWithMap([1,-2,-3]) // [2,-4,-6]
 */
 
-function doubleValuesWithMap(arr) {}
+function doubleValuesWithMap(arr) {
+
+    return arr.map(function(value, index, array) {
+        return value * 2;
+    })
+}
 
 /*
 Write a function called valTimesIndex which accepts an array and returns a new array with each
