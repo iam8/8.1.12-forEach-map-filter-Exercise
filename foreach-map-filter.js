@@ -160,7 +160,10 @@ Examples:
 */
 
 function extractKey(arr, key){
-    
+
+    return arr.map(function(value, index, array) {
+        return value[key];
+    })
 }
 
 /*
