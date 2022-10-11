@@ -181,7 +181,10 @@ Examples:
 */
 
 function extractFullName(arr){
-    
+
+    return arr.map(function(value, index, array) {
+        return `${value["first"]} ${value["last"]}`;
+    })
 }
 
 /*
