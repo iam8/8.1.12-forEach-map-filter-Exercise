@@ -92,7 +92,7 @@ describe("#extractKey", function() {
     });
 });
 
-describe("#extractFulName", function() {
+describe("#extractFullName", function() {
     var arr = [
         { first: "Elie", last: "Schoppik" },
         { first: "Tim", last: "Garcia" },
